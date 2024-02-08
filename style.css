@@ -141,53 +141,47 @@ footer {
 .quienessomos-img {
     width: 300px;
     height: 300px;
-    border: 1px solid black;
 }
-
-.quienessomos {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "jakartasans-regular";
-    display: flex
-}
-
-.descripcion-quienessomos {
-    padding-left: 2%;
-    font-size: large;
-    line-height: 200%;
-}
-
-.columnas-info {
-    column-count: 2;
-    gap: 5%;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 5%;
-}
-
-.columnas-info img {
-    width: 300px;
-    height: 300px;
-    padding-right: 120px;
-    padding-left: 120px;
-    padding-top: 120px;
-    padding-bottom: 60px;
-}
-
-.columnas-info p {
+.quienessomos{
+    display: flex;
     font-family: "jakartasans-regular";
     font-size: medium;
-    line-height: 200%;
-    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+.info-iconos, .info-iconos2{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+.columnas-info{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 380px 324px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "icon1 icon2"
+    "descripcion1 descripcion2";
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    gap: 50px;
+}
+.info-iconos{
+    grid-area: icon1;
+}
+.info-iconos2{
+    grid-area: icon2;
+}
+.iconos-descripcion1{grid-area: descripcion1;}
+.iconos-descripcion2{grid-area: descripcion2;}
 
 h3 {
     font-family: "jakartasans-negrita";
-    text-align: center;
-    font-size: larger;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
 }
 
 /* CONTACTO */
