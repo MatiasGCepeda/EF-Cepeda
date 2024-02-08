@@ -71,42 +71,38 @@ section .fondo {
 
 
 /* FOOTER */
+.logos-redes {grid-area: redes;}
+.info-footer {grid-area: info;}
+.ubicacion-footer{grid-area: ubicacion;}
+
 footer {
-    font-family: "jakartasans-negrita";
-    margin-top: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 3%;
     background-color: #E3E2DD;
-    color: black;
+    font-family: "jakartasans-negrita";
+    font-size: medium;
+    padding-top: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1.6fr 0.7fr 0.7fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px;
+    grid-template-areas: 
+    "redes info ubicacion";
 }
-.logos-redes img {
+.logos-redes{
+    display: flex;
+    align-content: center;
+    gap: 5%;
+}
+.logos-redes a img {
     width: 40px;
     height: 40px;
-    padding-right: 15px;
 }
-.info-footer {
-    font-family: "jakartasans-regular";
+.info-footer a {
+    display: block;
     text-decoration: none;
-    display: flex;
-    justify-content: end;
-    margin-left: 90%;
+    color: black;
 }
-
-footer p {
-    display: flex;
-    justify-content: end;
-}
-
-.mapa {
-    height: 20%;
-    width: 20%;
-    display: flex;
-    margin-left: 80%;
-    padding-top: 30px;
-}
-
 
 /* PRODUCTOS */
 h2 {
