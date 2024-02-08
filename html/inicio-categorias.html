@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/logo.jpeg">
+    <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
+
     <title>CATEGORÍAS</title>
+    <!-- CDN Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <span class="menu-container">
-                <img class="imagen-logo" src="../multimedia/logo.jpeg" alt="Sestra Deco&Home logo">
-                <a href="../index.html">INICIO</a>
-                <a href="../html/inicio-productos.html">PRODUCTOS</a>
-                <a href="../html/inicio-categorias.html">CATEGORÍAS</a>
-                <a href="../html/inicio-quienessomos.html">¿QUIÉNES SOMOS?</a>
-                <a href="../html/inicio-contacto.html">CONTACTO</a>
-            </span>
-        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: #E3E2DD;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="../multimedia/logo.jpeg" alt="SESTRA Deco&Home"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item" aria-current="page">
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/inicio-productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../html/inicio-categorias.html">CATEGORIAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/inicio-quienessomos.html">¿QUIENES SOMOS?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/inicio-contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
 <img class="categoria-img" src="../multimedia/categorias.png" alt="Sección categorías">
-<h2>Categorías</h2>
+<p class="titulo">Categorías</p>
 
 <section>
     <div class="columnas">
@@ -56,7 +79,7 @@
 </section>
 
 <footer>
-        <div class="logos-redes">
+    <div class="logos-redes">
         <a href="https://web.whatsapp.com">
         <img src="../multimedia/Iconos de Redes/logo-wpp.png" alt="whatsapp">
         </a>
@@ -73,12 +96,17 @@
         <img src="../multimedia/Iconos de Redes/logo-vsco.png" alt="VSCO">
         </a>
     </div>
-    <a class="info-footer" href="./inicio-contacto.html">Contacto</a>
-    <a class="info-footer" href="./inicio-quienessomos.html">¿Quiénes somos?</a>
 
-    <p>Rosario, Argentina</p>
-    <iframe class=mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1123491404305!2d-60.67011728868617!3d-32.94804307184903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5db126018d%3A0x8007cc50c2459194!2sAv.%20Francia%201314%2C%20S2002QRS%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1705434417888!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>Av. Francia 1314</p>
+    <div class="info-footer">
+      <a href="../html/inicio-contacto.html">Contacto</a>
+      <a href="../html/inicio-quienessomos.html">¿Quiénes somos?</a>
+    </div>
+
+    <div class="ubicacion-footer">
+      <iframe class=mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1123491404305!2d-60.67011728868617!3d-32.94804307184903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5db126018d%3A0x8007cc50c2459194!2sAv.%20Francia%201314%2C%20S2002QRS%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1705434417888!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>Rosario, Argentina</p>
+      <p>Av. Francia 1314</p>
+    </div>
 </footer>
 </body>
 </html>
