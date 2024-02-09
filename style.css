@@ -2,6 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
+@media (max-width:480px) {
+    /* Home */
+    .seccion {
+        font-size: small;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .velas div img {
+        display: block;
+        width:10%;
+        height: 10%;
+        height: fit-content;
+    }
+
+}
+
+
+
+
+
+
 @font-face {
     font-family: "jakartasans-negrita";
     src: url(font/static/PlusJakartaSans-Bold.ttf);
@@ -73,6 +95,10 @@ section .fondo {
 /* FOOTER */
 .logos-redes {grid-area: redes;}
 .info-footer {grid-area: info;}
+.info-footer a:hover{
+    color:gray
+}
+
 .ubicacion-footer{grid-area: ubicacion;}
 
 footer {
