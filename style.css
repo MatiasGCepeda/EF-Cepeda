@@ -2,28 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-@media (max-width:480px) {
-    /* Home */
-    .seccion {
-        font-size: small;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .velas div img {
-        display: block;
-        width:10%;
-        height: 10%;
-        height: fit-content;
-    }
-
-}
-
-
-
-
-
-
 @font-face {
     font-family: "jakartasans-negrita";
     src: url(font/static/PlusJakartaSans-Bold.ttf);
@@ -91,7 +69,6 @@ section .fondo {
     padding: 10px;
 }
 
-
 /* FOOTER */
 .logos-redes {grid-area: redes;}
 .info-footer {grid-area: info;}
@@ -128,6 +105,37 @@ footer {
     display: block;
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:480px) {
+    /* Home MOBILE*/
+    .velas {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        font-family: "jakartasans-regular";
+        font-size: medium;
+        margin-left: 90px;
+    }
+    
+    .velas div img {
+        height: 300px;
+        width: 300px;
+        padding-bottom: 2%;
+    }
+
+    /* CATEGORIAS MOBILE */
+    .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    }
+    .categoria-imagen{
+        display: none;
+    }
+
+    /* FOOTER MOBILE */
+    
 }
 
 /* PRODUCTOS */
