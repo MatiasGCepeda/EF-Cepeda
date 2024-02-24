@@ -58,14 +58,21 @@ section .fondo {
 }
 
 /* CATEGORIAS */
+.flex-container-categorias{
+    padding-top: 5px;
+}
 .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
     display: flex;
+    line-height: 175%;
+    align-items: center;
+    font-family: "jakartasans-regular";
+    font-size: large;
     margin-left: 10%;
     margin-right: 10%;
 }
 .categoria-imagen{
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     padding: 10px;
 }
 
@@ -82,15 +89,17 @@ footer {
     background-color: #E3E2DD;
     font-family: "jakartasans-negrita";
     font-size: medium;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 5%;
-    padding-left: 50px;
-    padding-right: 50px;
     display: grid;
     grid-template-columns: 1.6fr 0.7fr 0.7fr; 
-    grid-template-rows: 1fr; 
+    grid-template-rows: 3fr; 
     gap: 0px 10px;
     grid-template-areas: 
-    "redes info ubicacion";
+    ". . ."
+    "redes info ubicacion"
+    ". . .";
 }
 .logos-redes{
     display: flex;
@@ -128,14 +137,34 @@ footer {
     .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
     display: flex;
     flex-direction: column;
-    font-size: medium;
+    font-size: small;
     }
     .categoria-imagen{
         display: none;
     }
 
     /* FOOTER MOBILE */
-    
+    .ubicacion-footer{
+        display: none;
+    }
+    footer{
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: small;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+        "redes"
+        "info"
+        ".";
+    }
+    .logos-redes{
+        display: flex;
+        text-align: center;
+        gap: 7%;
+    }
 }
 
 /* PRODUCTOS */
