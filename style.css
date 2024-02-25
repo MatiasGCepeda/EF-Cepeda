@@ -144,72 +144,6 @@ footer {
     font-family: "jakartasans-negrita";
 }
 
-
-
-
-
-
-
-@media screen and (max-width:480px) {
-    /* Home MOBILE*/
-    .velas {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        font-family: "jakartasans-regular";
-        font-size: medium;
-        margin-left: 90px;
-    }
-    
-    .velas div img {
-        height: 300px;
-        width: 300px;
-        padding-bottom: 2%;
-    }
-
-    /* CATEGORIAS MOBILE */
-    .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-    }
-    .categoria-imagen{
-        display: none;
-    }
-
-    /* FOOTER MOBILE */
-    .ubicacion-footer{
-        display: none;
-    }
-    footer{
-        padding-top: 10%;
-        padding-bottom: 5%;
-        text-align: center;
-        font-size: small;
-        gap: 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
-        "redes"
-        "info"
-        ".";
-    }
-    .logos-redes{
-        display: flex;
-        text-align: center;
-        gap: 7%;
-    }
-
-
-
-    /* PRODUCTOS MOBILE */
-    .columnas {
-        display: block;
-        column-count: 1;
-    }
-}
-
-
 /* CATEGORIAS */
 .categoria-img {
     width: 100%;
@@ -261,6 +195,112 @@ h3 {
     justify-content: center;
     font-size: large;
 }
+
+@media screen and (max-width:480px) {
+    /* HOME Mobile*/
+    .velas {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        font-family: "jakartasans-regular";
+        font-size: medium;
+        margin-left: 90px;
+    }
+    
+    .velas div img {
+        height: 300px;
+        width: 300px;
+        padding-bottom: 2%;
+    }
+
+    /* CATEGORIAS Mobile */
+    .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    }
+    .categoria-imagen{
+        display: none;
+    }
+
+    /* FOOTER Mobile */
+    .ubicacion-footer{
+        display: none;
+    }
+    footer{
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: small;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+        "redes"
+        "info"
+        ".";
+    }
+    .logos-redes{
+        display: flex;
+        text-align: center;
+        gap: 7%;
+    }
+
+    /* PRODUCTOS Y CATEGORIAS Mobile */
+    .columnas {
+        display: block;
+        column-count: 1;
+    }
+
+    /* ¿QUIENES SOMOS? Mobile */
+    .quienessomos-img {
+        width: 377px;
+        height: 377px;
+    }
+    .quienessomos{
+        display: flex;
+        flex-direction: column;
+        font-family: "jakartasans-regular";
+        font-size: small;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h3{
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    .info-iconos, .info-iconos2{
+        display: flex;
+        width: 150px;
+        height: 150px;
+    }
+    .columnas-info{
+        display: grid;
+        justify-content: center;
+        font-size: medium;
+        font-family: "jakartasans-regular";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "icon1 icon2"
+        "descripcion1 descripcion2";
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 5%;
+        gap: 25px;
+    }
+    .info-iconos{
+        grid-area: icon1;
+    }
+    .info-iconos2{
+        grid-area: icon2;
+    }
+    .iconos-descripcion1{grid-area: descripcion1;}
+    .iconos-descripcion2{grid-area: descripcion2;}
+}
+
 
 /* CONTACTO */
 .contacto {
