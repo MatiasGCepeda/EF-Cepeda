@@ -196,6 +196,46 @@ h3 {
     font-size: large;
 }
 
+/* CONTACTO */
+.contacto {
+    display: flex;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.contacto-left {
+    font-family: "jakartasans-regular";
+    font-size: medium;
+    line-height: 200%;
+}
+
+
+.contacto-right {
+    margin-left: 10%;
+}
+
+.contacto-right input {
+    width: 300%;
+    padding-bottom: 10%;
+}
+
+.contacto-right p {
+    font-family: "jakartasans-regular";
+    color: grey;
+    font-size: small;
+    line-height: 200%;
+}
+
+.enviar {
+    margin-top: 20%;
+    font-family: "jakartasans-negrita";
+    font-size: large;
+    text-align: center;
+}
+
+
 @media screen and (max-width:480px) {
     /* HOME Mobile*/
     .velas {
@@ -299,44 +339,49 @@ h3 {
     }
     .iconos-descripcion1{grid-area: descripcion1;}
     .iconos-descripcion2{grid-area: descripcion2;}
+    
+    /* CONTACTO */
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+
+    .contacto-left {
+        font-family: "jakartasans-regular";
+        font-size: large;
+        padding-top: 10%;
+        margin: 0;
+        line-height: 200%;
+    }
+
+    .contacto-right{
+        margin: 0;
+    }
+
+    .contacto-right input {
+        width: 430px;
+        height: 50px;
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+
+    .contacto-right p {
+        font-family: "jakartasans-regular";
+        color: grey;
+        font-size: smaller;
+        line-height: 200%;
+    }
+
+    .enviar {
+        display: block;
+        height: 50px;
+        margin-top: 10%;
+        font-family: "jakartasans-negrita";
+        font-size: large;
+    }
 }
 
 
-/* CONTACTO */
-.contacto {
-    display: flex;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 10%;
-}
-
-.contacto-left {
-    font-family: "jakartasans-regular";
-    font-size: medium;
-    line-height: 200%;
-}
-
-
-.contacto-right {
-    margin-left: 10%;
-}
-
-.contacto-right input {
-    width: 300%;
-    padding-bottom: 10%;
-}
-
-.contacto-right p {
-    font-family: "jakartasans-regular";
-    color: grey;
-    font-size: small;
-    line-height: 200%;
-}
-
-.enviar {
-    margin-top: 20%;
-    font-family: "jakartasans-negrita";
-    font-size: large;
-    text-align: center;
-}
