@@ -66,7 +66,6 @@ section{
             }
         }
 
-
 /* CATEGORIAS */
 .seccion{
     background-color: #E3E2DD;
@@ -97,7 +96,6 @@ section{
         }
         }
     }
-
 
 /* FOOTER */
 footer{
@@ -141,9 +139,8 @@ footer{
     .ubicacion-footer{grid-area: ubicacion;}
 }
 
-
 /* PRODUCTOS */
-.titulo {
+.titulo{
     padding-top: 5%;
     font-family: "jakartasans-negrita";
     font-size: large;
@@ -152,45 +149,41 @@ footer{
     margin-bottom: 20px;
 }
 
-.columnas {
-    column-count: 3;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    font-family: "jakartasans-regular";
-    font-size: medium;
-}
-
-.columnas img {
-    width: 100%;
-    height: 100%;
-}
-
-.negrita {
-    font-family: "jakartasans-negrita";
+section{
+    .columnas{
+        column-count: 3;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        font-family: "jakartasans-regular";
+        font-size: medium;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 /* CATEGORIAS */
 .categoria-img {
     width: 100%;
 }
+.negrita {
+    font-family: "jakartasans-negrita";
+    text-align: center;
+}
 
 /* QUIENES SOMOS */
-.quienessomos-img {
-    width: 300px;
-    height: 300px;
-}
 .quienessomos{
     display: flex;
     font-family: "jakartasans-regular";
     font-size: medium;
     margin-left: 10%;
     margin-right: 10%;
-}
-.info-iconos, .info-iconos2{
-    display: flex;
-    width: 300px;
-    height: 300px;
+    .quienessomos-img{
+        width: 300px;
+        height: 300px;
+    }
 }
 .columnas-info{
     display: grid;
@@ -205,62 +198,67 @@ footer{
     margin-right: 25%;
     margin-bottom: 5%;
     gap: 50px;
-}
-.info-iconos{
-    grid-area: icon1;
-}
-.info-iconos2{
-    grid-area: icon2;
-}
-.iconos-descripcion1{grid-area: descripcion1;}
-.iconos-descripcion2{grid-area: descripcion2;}
 
-h3 {
+    .info-iconos{
+        grid-area: icon1;
+        display: flex;
+        width: 300px;
+        height: 300px;
+    }
+    .info-iconos2{
+        grid-area: icon2;
+        display: flex;
+        width: 300px;
+        height: 300px;
+    }    
+    .iconos-descripcion1{
+        grid-area: descripcion1;
+    }
+    .iconos-descripcion2{
+        grid-area: descripcion2;
+    }
+}
+
+h2 {
     font-family: "jakartasans-negrita";
     display: flex;
     justify-content: center;
-    font-size: large;
+    font-size: 28px;
+    padding-bottom: 20px;
 }
 
 /* CONTACTO */
-.contacto {
+.contacto{
     display: flex;
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 10%;
-}
-
-.contacto-left {
-    font-family: "jakartasans-regular";
-    font-size: medium;
-    line-height: 200%;
-}
-
-
-.contacto-right {
-    margin-left: 10%;
-}
-
-.contacto-right input {
-    width: 300%;
-    padding-bottom: 10%;
-}
-
-.contacto-right p {
-    font-family: "jakartasans-regular";
-    color: grey;
-    font-size: small;
-    line-height: 200%;
-}
-
-.enviar {
-    margin-top: 20%;
-    font-family: "jakartasans-negrita";
-    font-size: large;
-    text-align: center;
-}
-
+    .contacto-left{
+        font-family: "jakartasans-regular";
+        font-size: medium;
+        line-height: 200%;
+    }
+    .contacto-right{
+        margin-left: 10%;
+        input{
+            width: 300%;
+        padding-bottom: 10%;
+        }
+        }
+        p{
+            font-family: "jakartasans-regular";
+            color: grey;
+            font-size: small;
+            line-height: 200%;
+        }
+        .enviar{
+            margin-top: 20%;
+            font-family: "jakartasans-negrita";
+            font-size: large;
+            text-align: center;
+        }
+    }
 
 @media screen and (max-width:480px) {
     /* HOME Mobile*/

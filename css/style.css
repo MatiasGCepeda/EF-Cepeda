@@ -139,7 +139,7 @@ footer .ubicacion-footer {
   margin-bottom: 20px;
 }
 
-.columnas {
+section .columnas {
   column-count: 3;
   margin-left: 5%;
   margin-right: 5%;
@@ -147,14 +147,9 @@ footer .ubicacion-footer {
   font-family: "jakartasans-regular";
   font-size: medium;
 }
-
-.columnas img {
+section .columnas img {
   width: 100%;
   height: 100%;
-}
-
-.negrita {
-  font-family: "jakartasans-negrita";
 }
 
 /* CATEGORIAS */
@@ -162,12 +157,12 @@ footer .ubicacion-footer {
   width: 100%;
 }
 
-/* QUIENES SOMOS */
-.quienessomos-img {
-  width: 300px;
-  height: 300px;
+.negrita {
+  font-family: "jakartasans-negrita";
+  text-align: center;
 }
 
+/* QUIENES SOMOS */
 .quienessomos {
   display: flex;
   font-family: "jakartasans-regular";
@@ -175,9 +170,7 @@ footer .ubicacion-footer {
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.info-iconos, .info-iconos2 {
-  display: flex;
+.quienessomos .quienessomos-img {
   width: 300px;
   height: 300px;
 }
@@ -194,28 +187,31 @@ footer .ubicacion-footer {
   margin-bottom: 5%;
   gap: 50px;
 }
-
-.info-iconos {
+.columnas-info .info-iconos {
   grid-area: icon1;
+  display: flex;
+  width: 300px;
+  height: 300px;
 }
-
-.info-iconos2 {
+.columnas-info .info-iconos2 {
   grid-area: icon2;
+  display: flex;
+  width: 300px;
+  height: 300px;
 }
-
-.iconos-descripcion1 {
+.columnas-info .iconos-descripcion1 {
   grid-area: descripcion1;
 }
-
-.iconos-descripcion2 {
+.columnas-info .iconos-descripcion2 {
   grid-area: descripcion2;
 }
 
-h3 {
+h2 {
   font-family: "jakartasans-negrita";
   display: flex;
   justify-content: center;
-  font-size: large;
+  font-size: 28px;
+  padding-bottom: 20px;
 }
 
 /* CONTACTO */
@@ -226,30 +222,25 @@ h3 {
   margin-left: 5%;
   margin-bottom: 10%;
 }
-
-.contacto-left {
+.contacto .contacto-left {
   font-family: "jakartasans-regular";
   font-size: medium;
   line-height: 200%;
 }
-
-.contacto-right {
+.contacto .contacto-right {
   margin-left: 10%;
 }
-
-.contacto-right input {
+.contacto .contacto-right input {
   width: 300%;
   padding-bottom: 10%;
 }
-
-.contacto-right p {
+.contacto p {
   font-family: "jakartasans-regular";
   color: grey;
   font-size: small;
   line-height: 200%;
 }
-
-.enviar {
+.contacto .enviar {
   margin-top: 20%;
   font-family: "jakartasans-negrita";
   font-size: large;
