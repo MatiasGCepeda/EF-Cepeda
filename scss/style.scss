@@ -14,23 +14,10 @@
 
 /* NAVBAR */
 
-.navbar{
-    font-family: "jakartasans-negrita";
-    font-size: medium;
-    background-color: #E3E2DD;
-        .nav-item{
-            padding-left: 40px;
-        }
-    
-        .navbar-brand{
-            img{
-                height: 70px;
-            }
-        }
-    }
+@import "header";
+@import "footer";
 
-
-/* INDEX */
+/*INDEX*/
 section {
     .fondo {
         height: fit-content;
@@ -58,15 +45,33 @@ section{
         margin-bottom: 2%;
         font-family: "jakartasans-regular";
         font-size: large;
+        
+        @media screen and (max-width: 480px){
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2%;
+            font-family: "jakartasans-regular";
+            font-size: medium;
+            margin-left: 90px;
+        }
                 img {
                     width: 500px;
                     height: 500px;
                     padding-bottom: 2%;
+                    @media screen and (max-width: 480px) {
+                        height: 300px;
+                        width: 300px;
+                        padding-bottom: 2%;
+                    }
                 }
             }
-        }
+    }
 
 /* CATEGORIAS */
+.categoria-img{
+    width: 100%;
+}
+
 .seccion{
     background-color: #E3E2DD;
         color: black;
@@ -88,55 +93,22 @@ section{
         font-size: large;
         margin-left: 10%;
         margin-right: 10%;
+        
+        @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        }
+    }
 
         .categoria-imagen{
             width: 300px;
             height: 300px;
             padding: 10px;
+            @media screen and (max-width: 480px) {
+                display: none;
+            }    
         }
-        }
-    }
-
-/* FOOTER */
-footer{
-    background-color: #E3E2DD;
-    font-family: "jakartasans-negrita";
-    font-size: medium;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 5%;
-    display: grid;
-    grid-template-columns: 1.6fr 0.7fr 0.7fr; 
-    grid-template-rows: 3fr; 
-    gap: 0px 10px;
-    grid-template-areas: 
-    ". . ."
-    "redes info ubicacion"
-    ". . .";
-    .logos-redes{
-        grid-area: redes;
-        display: flex;
-        align-content: center;
-        gap: 5%;
-        a{
-            img{
-                width: 40px;
-                height: 40px;
-            }
-        }
-    }
-
-    .info-footer{
-        grid-area: info;
-        a{
-            &hover{color: gray;}
-            display: block;
-            text-decoration: none;
-            color: black;
-        }
-    }
-
-    .ubicacion-footer{grid-area: ubicacion;}
 }
 
 /* PRODUCTOS */
@@ -165,12 +137,23 @@ section{
 }
 
 /* CATEGORIAS */
-.categoria-img {
+.categoria-imagen {
     width: 100%;
+@media screen and (max-width: 480px){
+    display: none;
+}
 }
 .negrita {
     font-family: "jakartasans-negrita";
     text-align: center;
+}
+@media screen and (max-width: 480px) {
+    /* CATEGORIAS Mobile */
+    .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles {
+      display: flex;
+      flex-direction: column;
+      font-size: small;
+    }
 }
 
 /* QUIENES SOMOS */
@@ -259,153 +242,5 @@ h2 {
             text-align: center;
         }
     }
-
-@media screen and (max-width:480px) {
-    /* HOME Mobile*/
-    .velas {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2%;
-        font-family: "jakartasans-regular";
-        font-size: medium;
-        margin-left: 90px;
-    }
-    
-    .velas div img {
-        height: 300px;
-        width: 300px;
-        padding-bottom: 2%;
-    }
-
-    /* CATEGORIAS Mobile */
-    .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles{
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-    }
-    .categoria-imagen{
-        display: none;
-    }
-
-    /* FOOTER Mobile */
-    .ubicacion-footer{
-        display: none;
-    }
-    footer{
-        padding-top: 10%;
-        padding-bottom: 5%;
-        text-align: center;
-        font-size: small;
-        gap: 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
-        "redes"
-        "info"
-        ".";
-    }
-    .logos-redes{
-        display: flex;
-        text-align: center;
-        gap: 7%;
-    }
-
-    /* PRODUCTOS Y CATEGORIAS Mobile */
-    .columnas {
-        display: block;
-        column-count: 1;
-    }
-
-    /* ¿QUIENES SOMOS? Mobile */
-    .quienessomos-img {
-        width: 377px;
-        height: 377px;
-    }
-    .quienessomos{
-        display: flex;
-        flex-direction: column;
-        font-family: "jakartasans-regular";
-        font-size: small;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    h3{
-        text-align: center;
-        padding-bottom: 10%;
-    }
-
-    .info-iconos, .info-iconos2{
-        display: flex;
-        width: 150px;
-        height: 150px;
-    }
-    .columnas-info{
-        display: grid;
-        justify-content: center;
-        font-size: medium;
-        font-family: "jakartasans-regular";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "icon1 icon2"
-        "descripcion1 descripcion2";
-        margin-top: 5%;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 5%;
-        gap: 25px;
-    }
-    .info-iconos{
-        grid-area: icon1;
-    }
-    .info-iconos2{
-        grid-area: icon2;
-    }
-    .iconos-descripcion1{grid-area: descripcion1;}
-    .iconos-descripcion2{grid-area: descripcion2;}
-    
-    /* CONTACTO */
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5%;
-        margin-right: 0;
-        margin-bottom: 10%;
-    }
-
-    .contacto-left {
-        font-family: "jakartasans-regular";
-        font-size: large;
-        padding-top: 10%;
-        margin: 0;
-        line-height: 200%;
-    }
-
-    .contacto-right{
-        margin: 0;
-    }
-
-    .contacto-right input {
-        width: 430px;
-        height: 50px;
-        padding-left: 10%;
-        padding-bottom: 10%;
-    }
-
-    .contacto-right p {
-        font-family: "jakartasans-regular";
-        color: grey;
-        font-size: smaller;
-        line-height: 200%;
-    }
-
-    .enviar {
-        display: block;
-        height: 50px;
-        margin-top: 10%;
-        font-family: "jakartasans-negrita";
-        font-size: large;
-    }
-}
 
 
