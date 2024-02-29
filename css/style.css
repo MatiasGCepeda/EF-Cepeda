@@ -33,11 +33,11 @@ footer {
   background-color: #E3E2DD;
   font-family: "jakartasans-negrita";
   font-size: medium;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 5%;
   display: grid;
-  grid-template-columns: 1.6fr 0.7fr 0.7fr;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
   grid-template-rows: 3fr;
   gap: 0px 10px;
   grid-template-areas: ". . ." "redes info ubicacion" ". . .";
@@ -51,6 +51,13 @@ footer .logos-redes {
 footer .logos-redes a img {
   width: 40px;
   height: 40px;
+}
+@media screen and (max-width: 480px) {
+  footer .logos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 footer .info-footer {
   grid-area: info;
@@ -178,7 +185,7 @@ section .velas img {
   }
 }
 
-/* PRODUCTOS */
+/* HTML/PRODUCTOS */
 .titulo {
   padding-top: 5%;
   font-family: "jakartasans-negrita";
@@ -200,31 +207,20 @@ section .columnas img {
   width: 100%;
   height: 100%;
 }
-
-/* CATEGORIAS */
-.categoria-imagen {
-  width: 100%;
-}
 @media screen and (max-width: 480px) {
-  .categoria-imagen {
-    display: none;
+  section .columnas {
+    display: block;
+    column-count: 1;
   }
 }
 
+/* HMTL/CATEGORIAS */
 .negrita {
   font-family: "jakartasans-negrita";
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  /* CATEGORIAS Mobile */
-  .cat-jardin, .cat-bazar, .cat-iluminacion, .cat-muebles {
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-  }
-}
-/* QUIENES SOMOS */
+/* HTML/QUIENES SOMOS */
 .quienessomos {
   display: flex;
   font-family: "jakartasans-regular";
@@ -235,6 +231,20 @@ section .columnas img {
 .quienessomos .quienessomos-img {
   width: 300px;
   height: 300px;
+}
+@media screen and (max-width: 480px) {
+  .quienessomos {
+    display: flex;
+    flex-direction: column;
+    font-family: "jakartasans-regular";
+    font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .quienessomos .quienessomos-img {
+    width: 377px;
+    height: 377px;
+  }
 }
 
 .columnas-info {
@@ -267,12 +277,49 @@ section .columnas img {
 .columnas-info .iconos-descripcion2 {
   grid-area: descripcion2;
 }
+.columnas-info h4 {
+  font-size: medium;
+  font-family: "jakartasans-regular";
+}
+@media screen and (max-width: 480px) {
+  .columnas-info {
+    display: grid;
+    justify-content: center;
+    font-size: medium;
+    font-family: "jakartasans-regular";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "icon1 icon2" "descripcion1 descripcion2";
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    gap: 25px;
+  }
+  .columnas-info .info-iconos, .columnas-info .info-iconos2 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+  }
+  .columnas-info .info-iconos {
+    grid-area: icon1;
+  }
+  .columnas-info .info-iconos2 {
+    grid-area: icon2;
+  }
+  .columnas-info .iconos-descripcion1 {
+    grid-area: descripcion1;
+  }
+  .columnas-info .iconos-descripcion2 {
+    grid-area: descripcion2;
+  }
+}
 
-h2 {
+.quienessomos-final {
   font-family: "jakartasans-negrita";
   display: flex;
   justify-content: center;
-  font-size: 28px;
+  font-size: larger;
   padding-bottom: 20px;
 }
 
@@ -307,6 +354,46 @@ h2 {
   font-family: "jakartasans-negrita";
   font-size: large;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 0;
+    margin-bottom: 25%;
+  }
+  .contacto .contacto-left {
+    font-family: "jakartasans-regular";
+    font-size: large;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    margin: 0;
+    line-height: 200%;
+  }
+  .contacto .contacto-right {
+    margin: 0;
+  }
+  .contacto .contacto-right input {
+    width: 430px;
+    height: 50px;
+    padding-left: 10%;
+    padding-bottom: 10%;
+  }
+  .contacto .contacto-right p {
+    font-family: "jakartasans-regular";
+    color: grey;
+    font-size: smaller;
+    line-height: 200%;
+  }
+  .contacto .contacto-right .enviar {
+    display: block;
+    height: 50px;
+    margin-top: 10%;
+    font-family: "jakartasans-negrita";
+    font-size: large;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

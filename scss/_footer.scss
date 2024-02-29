@@ -3,11 +3,11 @@ footer{
     background-color: #E3E2DD;
     font-family: "jakartasans-negrita";
     font-size: medium;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 5%;
     display: grid;
-    grid-template-columns: 1.6fr 0.7fr 0.7fr; 
+    grid-template-columns: 1.4fr 0.9fr 0.7fr; 
     grid-template-rows: 3fr; 
     gap: 0px 10px;
     grid-template-areas: 
@@ -26,6 +26,13 @@ footer{
             }
         }
     }
+    @media screen and (max-width: 480px){
+        .logos-redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        }
 
     .info-footer{
         grid-area: info;
