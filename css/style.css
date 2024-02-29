@@ -187,7 +187,6 @@ section .velas img {
 
 /* HTML/PRODUCTOS */
 .titulo {
-  padding-top: 5%;
   font-family: "jakartasans-negrita";
   font-size: large;
   margin-top: 20px;
@@ -278,8 +277,10 @@ section .columnas img {
   grid-area: descripcion2;
 }
 .columnas-info h4 {
+  display: flex;
   font-size: medium;
-  font-family: "jakartasans-regular";
+  font-family: "jakartasans-negrita";
+  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   .columnas-info {
