@@ -16,7 +16,7 @@ Proyecto para el curso de Desarrollo Web, Coderhouse.
 
 
 ### Herramientas Utilizadas:
-- CSS 3
+- CSS 3/SASS
 - HTML 5
 - Bootstrap
 

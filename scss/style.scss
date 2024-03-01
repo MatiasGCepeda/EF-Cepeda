@@ -104,6 +104,7 @@ section{
         .categoria-imagen{
             width: 300px;
             height: 300px;
+            border-radius: 5%;
             padding: 10px;
             @media screen and (max-width: 480px) {
                 display: none;
@@ -156,6 +157,7 @@ section{
 /* HTML/QUIENES SOMOS */
 .quienessomos{
     display: flex;
+    gap: 20px;
     font-family: "jakartasans-regular";
     font-size: medium;
     margin-left: 10%;
@@ -163,6 +165,7 @@ section{
     .quienessomos-img{
         width: 300px;
         height: 300px;
+        border-radius: 10%;
     }
 
     @media screen and (max-width: 480px) {
@@ -175,6 +178,7 @@ section{
         .quienessomos-img {
             width: 377px;
             height: 377px;
+            border-radius: 50%;
         }
     }
 }
