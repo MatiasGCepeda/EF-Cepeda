@@ -9,6 +9,10 @@
     <!-- CDN Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Title -->
     <title>Categorías | Sestra Deco&Home.</title>
     <!-- Descripcion del sitio  -->
@@ -22,6 +26,11 @@
     <meta property="og:title" content="Sestra Deco&Home | Transforma tu espacio, inspira tu vida.">
 </head>
 <body>
+  <!-- SCRIPT AOS -->
+  <script>
+    AOS.init();
+  </script>
+
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #E3E2DD;">
             <div class="container-fluid">
@@ -52,17 +61,17 @@
           </nav>
     </header>
 
-<img class="categoria-img" src="../multimedia/categorias.png" alt="Sección categorías">
+<img class="categoria-img" src="../multimedia/categorias.png" alt="Sección categorías" data-aos="fade-left" data-aos-duration="1500">
 <p class="titulo">Categorías</p>
 
 <section>
-    <div class="columnas">
+    <div class="columnas" data-aos="fade-up" data-aos-duration="1500">
         <img src="../multimedia/CATEGORIAS/MINIMALISTA.jpg" alt=""> <p class="negrita">MINIMALISTA </p>
         <img src="../multimedia/CATEGORIAS/JARDIN.webp" alt=""> <p class="negrita">GARDEN </p>
         <img src="../multimedia/CATEGORIAS/jewelry.jpg" alt=""> <p class="negrita">JEWELRY </p>
     </div>
 
-    <div class="columnas">
+    <div class="columnas" data-aos="fade-up" data-aos-duration="1500">
         <img src="../multimedia/CATEGORIAS/iluminacion.jpg" alt=""> <p class="negrita">ILUMINACIÓN </p>
         <img src="../multimedia/CATEGORIAS/muebles.jpg" alt=""> <p class="negrita">MUEBLES </p>
         <img src="../multimedia/CATEGORIAS/velas.jpg" alt=""> <p class="negrita">VELAS </p>

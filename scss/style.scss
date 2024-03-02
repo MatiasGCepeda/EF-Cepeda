@@ -186,7 +186,7 @@ section{
 .columnas-info{
     display: grid;
     justify-content: center;
-    grid-template-columns: 380px 324px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "icon1 icon2"
@@ -200,14 +200,18 @@ section{
     .info-iconos{
         grid-area: icon1;
         display: flex;
+        justify-content: center;
         width: 300px;
         height: 300px;
+        border-radius: 50%;
     }
     .info-iconos2{
         grid-area: icon2;
         display: flex;
+        justify-content: center;
         width: 300px;
         height: 300px;
+        border-radius: 50%;
     }    
     .iconos-descripcion1{
         grid-area: descripcion1;
@@ -219,7 +223,7 @@ section{
         display: flex;
         font-size: medium;
         font-family: "jakartasans-negrita";
-        justify-content: center;
+        justify-content: baseline;
     }
 
     @media screen and (max-width: 480px) {

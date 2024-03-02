@@ -4,14 +4,7 @@
 Sitio web sobre un emprendimiento de Interiores y decoración.
 Proyecto para el curso de Desarrollo Web, Coderhouse.
 
-### Fundadores
-
-- Ariana Sanchidrian
-- Victoria Sanchidrian
-
-
 ### Desarrollador
-
 - Matias Gabriel Cepeda
 
 
