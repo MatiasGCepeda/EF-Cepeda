@@ -102,7 +102,7 @@ section .seccion {
   background-color: #E3E2DD;
   color: black;
   font-family: "jakartasans-negrita";
-  font-size: medium;
+  font-size: large;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -114,7 +114,7 @@ section .velas {
   justify-content: space-evenly;
   margin-bottom: 2%;
   font-family: "jakartasans-regular";
-  font-size: large;
+  font-size: medium;
 }
 @media screen and (max-width: 480px) {
   section .velas {
@@ -148,7 +148,7 @@ section .velas img {
   background-color: #E3E2DD;
   color: black;
   font-family: "jakartasans-negrita";
-  font-size: medium;
+  font-size: large;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -163,7 +163,7 @@ section .velas img {
   line-height: 175%;
   align-items: center;
   font-family: "jakartasans-regular";
-  font-size: large;
+  font-size: "jakartasans-negrita";
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -226,6 +226,7 @@ section .columnas img {
   gap: 20px;
   font-family: "jakartasans-regular";
   font-size: medium;
+  line-height: 200%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -252,6 +253,7 @@ section .columnas img {
 
 .columnas-info {
   display: grid;
+  font-family: "jakartasans-regular";
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -280,13 +282,14 @@ section .columnas img {
 }
 .columnas-info .iconos-descripcion1 {
   grid-area: descripcion1;
+  font-size: "jakartasans-regular";
 }
 .columnas-info .iconos-descripcion2 {
   grid-area: descripcion2;
+  font-size: "jakartasans-regular";
 }
 .columnas-info h4 {
   display: flex;
-  font-size: medium;
   font-family: "jakartasans-negrita";
   justify-content: baseline;
 }
@@ -328,7 +331,7 @@ section .columnas img {
   font-family: "jakartasans-negrita";
   display: flex;
   justify-content: center;
-  font-size: larger;
+  font-size: large;
   padding-bottom: 20px;
 }
 

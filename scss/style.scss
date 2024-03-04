@@ -16,6 +16,7 @@
 
 @import "header";
 @import "footer";
+@import "map";
 
 /*INDEX*/
 section {
@@ -28,10 +29,10 @@ section {
 /* PROXIMAMENTE */
 section{
     .seccion{
-        background-color: #E3E2DD;
+        background-color: map-get($map: $interfaz, $key: main-color);
         color: black;
-        font-family: "jakartasans-negrita";
-        font-size: medium;
+        font-family: map-get($map: $interfaz, $key: font-title);
+        font-size: map-get($map: $interfaz, $key: size-title);
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
@@ -43,15 +44,15 @@ section{
         flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 2%;
-        font-family: "jakartasans-regular";
-        font-size: large;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
         
         @media screen and (max-width: 480px){
             display: flex;
             flex-direction: column;
             margin-bottom: 2%;
-            font-family: "jakartasans-regular";
-            font-size: medium;
+            font-family: map-get($map: $interfaz, $key: font-text);
+            font-size: map-get($map: $interfaz, $key: size-text);
             margin-left: 90px;
         }
                 img {
@@ -75,8 +76,8 @@ section{
 .seccion{
     background-color: #E3E2DD;
         color: black;
-        font-family: "jakartasans-negrita";
-        font-size: medium;
+        font-family: map-get($map: $interfaz, $key: font-title);
+        font-size: map-get($map: $interfaz, $key: size-title);
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
@@ -89,8 +90,8 @@ section{
         display: flex;
         line-height: 175%;
         align-items: center;
-        font-family: "jakartasans-regular";
-        font-size: large;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: font-title);
         margin-left: 10%;
         margin-right: 10%;
         
@@ -116,8 +117,8 @@ section{
 
 /* HTML/PRODUCTOS */
 .titulo{
-    font-family: "jakartasans-negrita";
-    font-size: large;
+    font-family: map-get($map: $interfaz, $key: font-title);
+    font-size: map-get($map: $interfaz, $key: size-title);
     margin-top: 20px;
     margin-left: 5%;
     margin-bottom: 20px;
@@ -129,8 +130,8 @@ section{
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 20px;
-        font-family: "jakartasans-regular";
-        font-size: medium;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
         img{
             width: 100%;
             height: 100%;
@@ -149,7 +150,7 @@ section{
 
 /* HMTL/CATEGORIAS */
 .negrita {
-    font-family: "jakartasans-negrita";
+    font-family: map-get($map: $interfaz, $key: font-title);
     text-align: center;
 }
 
@@ -158,8 +159,9 @@ section{
 .quienessomos{
     display: flex;
     gap: 20px;
-    font-family: "jakartasans-regular";
-    font-size: medium;
+    font-family: map-get($map: $interfaz, $key: font-text);
+    font-size: map-get($map: $interfaz, $key: size-text);
+    line-height: 200%;
     margin-left: 10%;
     margin-right: 10%;
     .quienessomos-img{
@@ -171,7 +173,7 @@ section{
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
-        font-family: "jakartasans-regular";
+        font-family: map-get($map: $interfaz, $key: font-text);
         font-size: small;
         margin-left: 10%;
         margin-right: 10%;
@@ -185,6 +187,7 @@ section{
 
 .columnas-info{
     display: grid;
+    font-family: map-get($map: $interfaz, $key: font-text);
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -215,14 +218,15 @@ section{
     }    
     .iconos-descripcion1{
         grid-area: descripcion1;
+        font-size: map-get($map: $interfaz, $key: font-text);
     }
     .iconos-descripcion2{
         grid-area: descripcion2;
+        font-size: map-get($map: $interfaz, $key: font-text);
     }
     h4{
         display: flex;
-        font-size: medium;
-        font-family: "jakartasans-negrita";
+        font-family: map-get($map: $interfaz, $key: font-title);
         justify-content: baseline;
     }
 
@@ -230,7 +234,7 @@ section{
         display: grid;
         justify-content: center;
         font-size: medium;
-        font-family: "jakartasans-regular";
+        font-family: map-get($map: $interfaz, $key: font-text);
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
@@ -253,10 +257,10 @@ section{
     }
 }
 .quienessomos-final {
-    font-family: "jakartasans-negrita";
+    font-family: map-get($map: $interfaz, $key: font-title);
     display: flex;
     justify-content: center;
-    font-size: larger;
+    font-size: map-get($map: $interfaz, $key: size-title);
     padding-bottom: 20px;
 }
 
@@ -268,8 +272,8 @@ section{
     margin-left: 5%;
     margin-bottom: 10%;
     .contacto-left{
-        font-family: "jakartasans-regular";
-        font-size: medium;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
         line-height: 200%;
     }
     .contacto-right{
@@ -280,7 +284,7 @@ section{
         }
         }
         p{
-            font-family: "jakartasans-regular";
+            font-family: map-get($map: $interfaz, $key: font-text);
             color: grey;
             font-size: small;
             line-height: 200%;
@@ -288,7 +292,7 @@ section{
         .enviar{
             margin-top: 20%;
             font-family: "jakartasans-negrita";
-            font-size: large;
+            font-size: map-get($map: $interfaz, $key: size-title);
             text-align: center;
         }
 }
@@ -300,7 +304,7 @@ section{
         margin-right: 0;
         margin-bottom: 25%;
         .contacto-left {
-            font-family: "jakartasans-regular";
+            font-family: map-get($map: $interfaz, $key: font-text);
             font-size: large;
             padding-top: 10%;
             padding-bottom: 15%;
@@ -316,7 +320,7 @@ section{
                 padding-bottom: 10%;
             }
             p {
-                font-family: "jakartasans-regular";
+                font-family: map-get($map: $interfaz, $key: font-text);
                 color: grey;
                 font-size: smaller;
                 line-height: 200%;
@@ -325,7 +329,7 @@ section{
                 display: block;
                 height: 50px;
                 margin-top: 10%;
-                font-family: "jakartasans-negrita";
+                font-family: map-get($map: $interfaz, $key: font-title);
                 font-size: large;
             }
         }
