@@ -91,6 +91,11 @@ footer .ubicacion-footer {
   }
 }
 
+.contacto .enviar, .columnas-info h4, .titulo, .seccion {
+  font-family: "jakartasans-negrita";
+  font-size: large;
+}
+
 /*INDEX*/
 section .fondo {
   height: fit-content;
@@ -147,8 +152,6 @@ section .velas img {
 .seccion {
   background-color: #E3E2DD;
   color: black;
-  font-family: "jakartasans-negrita";
-  font-size: large;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -188,8 +191,6 @@ section .velas img {
 
 /* HTML/PRODUCTOS */
 .titulo {
-  font-family: "jakartasans-negrita";
-  font-size: large;
   margin-top: 20px;
   margin-left: 5%;
   margin-bottom: 20px;
@@ -290,7 +291,6 @@ section .columnas img {
 }
 .columnas-info h4 {
   display: flex;
-  font-family: "jakartasans-negrita";
   justify-content: baseline;
 }
 @media screen and (max-width: 480px) {
@@ -331,7 +331,7 @@ section .columnas img {
   font-family: "jakartasans-negrita";
   display: flex;
   justify-content: center;
-  font-size: large;
+  font-size: larger;
   padding-bottom: 20px;
 }
 
@@ -363,8 +363,6 @@ section .columnas img {
 }
 .contacto .enviar {
   margin-top: 20%;
-  font-family: "jakartasans-negrita";
-  font-size: large;
   text-align: center;
 }
 

@@ -14,9 +14,10 @@
 
 /* NAVBAR */
 
-@import "header";
-@import "footer";
-@import "map";
+@import "components/header";
+@import "components/footer";
+@import "base/map";
+@import "base/extends";
 
 /*INDEX*/
 section {
@@ -76,8 +77,7 @@ section{
 .seccion{
     background-color: #E3E2DD;
         color: black;
-        font-family: map-get($map: $interfaz, $key: font-title);
-        font-size: map-get($map: $interfaz, $key: size-title);
+        @extend %title;
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
@@ -117,8 +117,7 @@ section{
 
 /* HTML/PRODUCTOS */
 .titulo{
-    font-family: map-get($map: $interfaz, $key: font-title);
-    font-size: map-get($map: $interfaz, $key: size-title);
+    @extend %title;
     margin-top: 20px;
     margin-left: 5%;
     margin-bottom: 20px;
@@ -226,7 +225,7 @@ section{
     }
     h4{
         display: flex;
-        font-family: map-get($map: $interfaz, $key: font-title);
+        @extend %title;
         justify-content: baseline;
     }
 
@@ -260,7 +259,7 @@ section{
     font-family: map-get($map: $interfaz, $key: font-title);
     display: flex;
     justify-content: center;
-    font-size: map-get($map: $interfaz, $key: size-title);
+    font-size: larger;
     padding-bottom: 20px;
 }
 
@@ -291,8 +290,7 @@ section{
         }
         .enviar{
             margin-top: 20%;
-            font-family: "jakartasans-negrita";
-            font-size: map-get($map: $interfaz, $key: size-title);
+            @extend %title;
             text-align: center;
         }
 }
