@@ -52,7 +52,7 @@ footer .logos-redes a img {
   width: 40px;
   height: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   footer .logos-redes {
     display: flex;
     flex-direction: row;
@@ -70,15 +70,21 @@ footer .info-footer a {
 footer .info-footer ahover {
   color: gray;
 }
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer .info-footer a {
+    display: flex;
+    justify-content: end;
+  }
+}
 footer .ubicacion-footer {
   grid-area: ubicacion;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1350px) {
   footer .ubicacion-footer {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   footer {
     padding-top: 10%;
     padding-bottom: 5%;
@@ -88,6 +94,14 @@ footer .ubicacion-footer {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     grid-template-areas: "redes" "info" ".";
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 
@@ -125,10 +139,18 @@ section .velas {
   section .velas {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 2%;
     font-family: "jakartasans-regular";
     font-size: medium;
-    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 480px) {
+  section .velas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
   }
 }
 section .velas img {
@@ -140,7 +162,22 @@ section .velas img {
   section .velas img {
     height: 300px;
     width: 300px;
+    align-items: center;
     padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 480px) {
+  section .velas img {
+    height: 480px;
+    width: 480px;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 1525px) and (min-width: 1200px) {
+  section .velas img {
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -170,7 +207,7 @@ section .velas img {
   margin-left: 10%;
   margin-right: 10%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .flex-container-categorias div {
     display: flex;
     flex-direction: column;
@@ -183,7 +220,7 @@ section .velas img {
   border-radius: 5%;
   padding: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1350px) {
   .flex-container-categorias .categoria-imagen {
     display: none;
   }

@@ -26,7 +26,7 @@ footer{
             }
         }
     }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 700px){
         .logos-redes{
             display: flex;
             flex-direction: row;
@@ -41,16 +41,22 @@ footer{
             display: block;
             text-decoration: none;
             color: black;
+            @media screen and (max-width: 1350px) and (min-width: 700px){
+                display: flex;
+                justify-content: end;
+            }
         }
+        
     }
 
-    .ubicacion-footer{grid-area: ubicacion;
-        @media screen and (max-width: 480px){
+    .ubicacion-footer{
+        grid-area: ubicacion;
+        @media screen and (max-width: 1350px){
             display: none;
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 700px) {
     padding-top: 10%;
     padding-bottom: 5%;
     text-align: center;
@@ -60,4 +66,10 @@ footer{
     grid-template-rows: 3fr;
     grid-template-areas: "redes" "info" ".";
 }   
+    @media screen and (max-width: 1350px) and (min-width: 700px){
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    }
 }
