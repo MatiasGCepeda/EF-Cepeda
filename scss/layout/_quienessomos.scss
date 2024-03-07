@@ -1,0 +1,158 @@
+/*Components*/
+@import "../components/header";
+@import "../components/footer";
+
+/*Base-Extend-Mixin*/
+@import "../base/map";
+@import "../base/extends";
+@import "../base/mixin";
+
+/* HTML/QUIENES SOMOS */
+.quienessomos{
+    display: flex;
+    gap: 20px;
+    font-family: map-get($map: $interfaz, $key: font-text);
+    font-size: map-get($map: $interfaz, $key: size-text);
+    line-height: 200%;
+    margin-left: 10%;
+    margin-right: 10%;
+    .quienessomos-img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: small;
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+        .quienessomos-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+        }
+    }
+    @media screen and (max-width: 1350px) and (min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+        
+        .quienessomos-img {
+            width: 400px;
+            height: 400px;
+            border-radius: 10%;
+        }
+    }
+}
+
+.columnas-info{
+    display: grid;
+    font-family: map-get($map: $interfaz, $key: font-text);
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "icon1 icon2"
+    "descripcion1 descripcion2";
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    gap: 50px;
+
+    .info-iconos{
+        grid-area: icon1;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .info-iconos2{
+        grid-area: icon2;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }    
+    .iconos-descripcion1{
+        grid-area: descripcion1;
+        font-size: map-get($map: $interfaz, $key: font-text);
+    }
+    .iconos-descripcion2{
+        grid-area: descripcion2;
+        font-size: map-get($map: $interfaz, $key: font-text);
+    }
+    h4{
+        display: flex;
+        @extend %title;
+        justify-content: baseline;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: grid;
+        justify-content: center;
+        font-size: small;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "icon1 icon2"
+        "descripcion1 descripcion2";
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 5%;
+        gap: 25px;      
+        .info-iconos, .info-iconos2{
+            display: flex;
+            width: 150px;
+            height: 150px;  
+        }
+        .info-iconos{grid-area: icon1;}
+        .info-iconos2{grid-area: icon2;}
+        .iconos-descripcion1{grid-area: descripcion1;}
+        .iconos-descripcion2{grid-area: descripcion2;}
+    }
+    @media screen and (max-width: 1350px) and (min-width: 600px) {
+        display: grid;
+        justify-content: center;
+        font-size: medium;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "icon1 icon2"
+        "descripcion1 descripcion2";
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 5%;
+        gap: 25px;      
+        .info-iconos, .info-iconos2{
+            display: flex;
+            width: 150px;
+            height: 150px;  
+        }
+        .info-iconos{grid-area: icon1;}
+        .info-iconos2{grid-area: icon2;}
+        .iconos-descripcion1{grid-area: descripcion1;}
+        .iconos-descripcion2{grid-area: descripcion2;}
+    }
+}
+.quienessomos-final {
+    font-family: map-get($map: $interfaz, $key: font-title);
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    padding-bottom: 20px;
+}

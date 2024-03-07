@@ -1,0 +1,45 @@
+/*Components*/
+@import "../components/header";
+@import "../components/footer";
+
+/*Base-Extend-Mixin*/
+@import "../base/map";
+@import "../base/extends";
+@import "../base/mixin";
+
+/* HTML/PRODUCTOS */
+.titulo{
+    @extend %title;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+section{
+    .columnas{
+        column-count: 3;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px){
+        .columnas{
+            display: block;
+            column-count: 1;
+        }
+    }
+}
+
+
+/* HMTL/CATEGORIAS */
+.negrita {
+    font-family: map-get($map: $interfaz, $key: font-title);
+    text-align: center;
+}

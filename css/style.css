@@ -11,11 +11,9 @@
   font-family: "jakartasans-regular";
   src: url(../font/static/PlusJakartaSans-Regular.ttf);
 }
-.foto-inicio {
-  width: 100%;
-}
-
 /* IMPORTS */
+/*hmtls*/
+/*Components*/
 .navbar {
   font-family: "jakartasans-negrita";
   font-size: medium;
@@ -105,6 +103,7 @@ footer .ubicacion-footer {
   }
 }
 
+/*Base-Extend-Mixin*/
 .contacto .enviar, .columnas-info h4, .titulo, .seccion {
   font-family: "jakartasans-negrita";
   font-size: large;
@@ -113,6 +112,10 @@ footer .ubicacion-footer {
 /*INDEX*/
 section .fondo {
   height: fit-content;
+  width: 100%;
+}
+
+.foto-inicio {
   width: 100%;
 }
 
@@ -226,6 +229,102 @@ section .velas img {
   }
 }
 
+/*Components*/
+.navbar {
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  background-color: #E3E2DD;
+}
+.navbar .nav-item {
+  padding-left: 40px;
+}
+.navbar .navbar-brand img {
+  height: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #E3E2DD;
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
+  grid-template-rows: 3fr;
+  gap: 0px 10px;
+  grid-template-areas: ". . ." "redes info ubicacion" ". . .";
+}
+footer .logos-redes {
+  grid-area: redes;
+  display: flex;
+  align-content: center;
+  gap: 5%;
+}
+footer .logos-redes a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 700px) {
+  footer .logos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+footer .info-footer {
+  grid-area: info;
+}
+footer .info-footer a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+footer .info-footer ahover {
+  color: gray;
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer .info-footer a {
+    display: flex;
+    justify-content: end;
+  }
+}
+footer .ubicacion-footer {
+  grid-area: ubicacion;
+}
+@media screen and (max-width: 1350px) {
+  footer .ubicacion-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: small;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "redes" "info" ".";
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/*Base-Extend-Mixin*/
+.contacto .enviar, .columnas-info h4, .titulo, .seccion {
+  font-family: "jakartasans-negrita";
+  font-size: large;
+}
+
 /* HTML/PRODUCTOS */
 .titulo {
   margin-top: 20px;
@@ -258,6 +357,102 @@ section .columnas img {
   text-align: center;
 }
 
+/*Components*/
+.navbar {
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  background-color: #E3E2DD;
+}
+.navbar .nav-item {
+  padding-left: 40px;
+}
+.navbar .navbar-brand img {
+  height: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #E3E2DD;
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
+  grid-template-rows: 3fr;
+  gap: 0px 10px;
+  grid-template-areas: ". . ." "redes info ubicacion" ". . .";
+}
+footer .logos-redes {
+  grid-area: redes;
+  display: flex;
+  align-content: center;
+  gap: 5%;
+}
+footer .logos-redes a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 700px) {
+  footer .logos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+footer .info-footer {
+  grid-area: info;
+}
+footer .info-footer a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+footer .info-footer ahover {
+  color: gray;
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer .info-footer a {
+    display: flex;
+    justify-content: end;
+  }
+}
+footer .ubicacion-footer {
+  grid-area: ubicacion;
+}
+@media screen and (max-width: 1350px) {
+  footer .ubicacion-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: small;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "redes" "info" ".";
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/*Base-Extend-Mixin*/
+.contacto .enviar, .columnas-info h4, .seccion, .titulo {
+  font-family: "jakartasans-negrita";
+  font-size: large;
+}
+
 /* HTML/QUIENES SOMOS */
 .quienessomos {
   display: flex;
@@ -273,7 +468,7 @@ section .columnas img {
   height: 300px;
   border-radius: 10%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .quienessomos {
     display: flex;
     flex-direction: column;
@@ -281,11 +476,28 @@ section .columnas img {
     font-size: small;
     margin-left: 10%;
     margin-right: 10%;
+    align-items: center;
   }
   .quienessomos .quienessomos-img {
-    width: 377px;
-    height: 377px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 600px) {
+  .quienessomos {
+    display: flex;
+    flex-direction: column;
+    font-family: "jakartasans-regular";
+    font-size: medium;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+  }
+  .quienessomos .quienessomos-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
   }
 }
 
@@ -330,7 +542,40 @@ section .columnas img {
   display: flex;
   justify-content: baseline;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+  .columnas-info {
+    display: grid;
+    justify-content: center;
+    font-size: small;
+    font-family: "jakartasans-regular";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "icon1 icon2" "descripcion1 descripcion2";
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    gap: 25px;
+  }
+  .columnas-info .info-iconos, .columnas-info .info-iconos2 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+  }
+  .columnas-info .info-iconos {
+    grid-area: icon1;
+  }
+  .columnas-info .info-iconos2 {
+    grid-area: icon2;
+  }
+  .columnas-info .iconos-descripcion1 {
+    grid-area: descripcion1;
+  }
+  .columnas-info .iconos-descripcion2 {
+    grid-area: descripcion2;
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 600px) {
   .columnas-info {
     display: grid;
     justify-content: center;
@@ -370,6 +615,102 @@ section .columnas img {
   justify-content: center;
   font-size: larger;
   padding-bottom: 20px;
+}
+
+/*Components*/
+.navbar {
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  background-color: #E3E2DD;
+}
+.navbar .nav-item {
+  padding-left: 40px;
+}
+.navbar .navbar-brand img {
+  height: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #E3E2DD;
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
+  grid-template-rows: 3fr;
+  gap: 0px 10px;
+  grid-template-areas: ". . ." "redes info ubicacion" ". . .";
+}
+footer .logos-redes {
+  grid-area: redes;
+  display: flex;
+  align-content: center;
+  gap: 5%;
+}
+footer .logos-redes a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 700px) {
+  footer .logos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+footer .info-footer {
+  grid-area: info;
+}
+footer .info-footer a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+footer .info-footer ahover {
+  color: gray;
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer .info-footer a {
+    display: flex;
+    justify-content: end;
+  }
+}
+footer .ubicacion-footer {
+  grid-area: ubicacion;
+}
+@media screen and (max-width: 1350px) {
+  footer .ubicacion-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: small;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "redes" "info" ".";
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/*Base-Extend-Mixin*/
+.contacto .enviar, .seccion, .titulo, .columnas-info h4 {
+  font-family: "jakartasans-negrita";
+  font-size: large;
 }
 
 /* CONTACTO */
@@ -441,6 +782,101 @@ section .columnas img {
     font-family: "jakartasans-negrita";
     font-size: large;
   }
+}
+/*Components*/
+.navbar {
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  background-color: #E3E2DD;
+}
+.navbar .nav-item {
+  padding-left: 40px;
+}
+.navbar .navbar-brand img {
+  height: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #E3E2DD;
+  font-family: "jakartasans-negrita";
+  font-size: medium;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
+  grid-template-rows: 3fr;
+  gap: 0px 10px;
+  grid-template-areas: ". . ." "redes info ubicacion" ". . .";
+}
+footer .logos-redes {
+  grid-area: redes;
+  display: flex;
+  align-content: center;
+  gap: 5%;
+}
+footer .logos-redes a img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 700px) {
+  footer .logos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+footer .info-footer {
+  grid-area: info;
+}
+footer .info-footer a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+footer .info-footer ahover {
+  color: gray;
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer .info-footer a {
+    display: flex;
+    justify-content: end;
+  }
+}
+footer .ubicacion-footer {
+  grid-area: ubicacion;
+}
+@media screen and (max-width: 1350px) {
+  footer .ubicacion-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: small;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "redes" "info" ".";
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 700px) {
+  footer {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/*Base-Extend-Mixin*/
+.seccion, .titulo, .columnas-info h4, .contacto .enviar {
+  font-family: "jakartasans-negrita";
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */

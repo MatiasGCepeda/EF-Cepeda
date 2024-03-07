@@ -1,0 +1,80 @@
+/*Components*/
+@import "../components/header";
+@import "../components/footer";
+
+/*Base-Extend-Mixin*/
+@import "../base/map";
+@import "../base/extends";
+@import "../base/mixin";
+
+
+/* CONTACTO */
+.contacto{
+    display: flex;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    .contacto-left{
+        font-family: map-get($map: $interfaz, $key: font-text);
+        font-size: map-get($map: $interfaz, $key: size-text);
+        line-height: 200%;
+    }
+    .contacto-right{
+        margin-left: 10%;
+        input{
+            width: 300%;
+        padding-bottom: 10%;
+        }
+        }
+        p{
+            font-family: map-get($map: $interfaz, $key: font-text);
+            color: grey;
+            font-size: small;
+            line-height: 200%;
+        }
+        .enviar{
+            margin-top: 20%;
+            @extend %title;
+            text-align: center;
+        }
+}
+@media screen and (max-width: 480px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-right: 0;
+        margin-bottom: 25%;
+        .contacto-left {
+            font-family: map-get($map: $interfaz, $key: font-text);
+            font-size: large;
+            padding-top: 10%;
+            padding-bottom: 15%;
+            margin: 0;
+            line-height: 200%;
+        }
+        .contacto-right{
+            margin: 0;
+            input {
+                width: 430px;
+                height: 50px;
+                padding-left: 10%;
+                padding-bottom: 10%;
+            }
+            p {
+                font-family: map-get($map: $interfaz, $key: font-text);
+                color: grey;
+                font-size: smaller;
+                line-height: 200%;
+            }
+            .enviar {
+                display: block;
+                height: 50px;
+                margin-top: 10%;
+                font-family: map-get($map: $interfaz, $key: font-title);
+                font-size: large;
+            }
+        }
+    }
+}
