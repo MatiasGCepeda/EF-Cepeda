@@ -716,6 +716,7 @@ footer .ubicacion-footer {
 /* CONTACTO */
 .contacto {
   display: flex;
+  flex-direction: row;
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
@@ -731,6 +732,9 @@ footer .ubicacion-footer {
 }
 .contacto .contacto-right input {
   width: 300%;
+  display: flex;
+  align-items: center;
+  height: auto;
   padding-bottom: 10%;
 }
 .contacto p {
@@ -741,10 +745,10 @@ footer .ubicacion-footer {
 }
 .contacto .enviar {
   margin-top: 20%;
-  text-align: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px) {
   .contacto {
     display: flex;
     flex-direction: column;
@@ -762,12 +766,12 @@ footer .ubicacion-footer {
   }
   .contacto .contacto-right {
     margin: 0;
+    align-items: center;
   }
   .contacto .contacto-right input {
-    width: 430px;
-    height: 50px;
-    padding-left: 10%;
-    padding-bottom: 10%;
+    width: 80%;
+    height: 80%;
+    align-items: center;
   }
   .contacto .contacto-right p {
     font-family: "jakartasans-regular";

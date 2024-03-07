@@ -11,6 +11,7 @@
 /* CONTACTO */
 .contacto{
     display: flex;
+    flex-direction: row;
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
@@ -24,7 +25,10 @@
         margin-left: 10%;
         input{
             width: 300%;
-        padding-bottom: 10%;
+            display: flex;
+            align-items: center;
+            height: auto;
+            padding-bottom: 10%;
         }
         }
         p{
@@ -36,10 +40,10 @@
         .enviar{
             margin-top: 20%;
             @extend %title;
-            text-align: center;
+            justify-content: center;
         }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px) {
     .contacto {
         display: flex;
         flex-direction: column;
@@ -56,11 +60,11 @@
         }
         .contacto-right{
             margin: 0;
+            align-items: center;
             input {
-                width: 430px;
-                height: 50px;
-                padding-left: 10%;
-                padding-bottom: 10%;
+                width: 80%;
+                height: 80%;
+                align-items: center;
             }
             p {
                 font-family: map-get($map: $interfaz, $key: font-text);
@@ -78,3 +82,4 @@
         }
     }
 }
+
